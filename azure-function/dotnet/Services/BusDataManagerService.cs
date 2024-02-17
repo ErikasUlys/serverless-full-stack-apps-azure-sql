@@ -26,7 +26,7 @@ public sealed class BusDataManagerService : IBusDataManagerService
             e => monitoredRoutes.Contains(e.Vehicle?.Trip?.RouteId ?? -1));
 
         _log.LogInformation(
-            "Received {FeedEntityCount} buses positions, found {BusesCount} buses in monitored routes",
+            "Received {FeedEntityCount} buses positions, found {BusesCount} buses in monitored routes.",
             feed?.Entities?.Count,
             buses?.Count);
 
